@@ -96,6 +96,19 @@ This will start RabbitMQ with the management plugin enabled. You can access the 
    pnpm run start:publisher
    ```
 
+### my local terminal running all the consumers and publisher
+
+<img width="1452" alt="Screenshot 2025-03-08 at 3 47 45 PM" src="https://github.com/user-attachments/assets/8acc43ab-84a8-4853-932d-3398d29adae3" />
+
+
+## Access RabbitMQ UI
+ - You should be able to access the UI at http://localhost:15672/ ( guest /guest - default credential for localhost)
+ - Once the consumers are up and running, they creates bindings between its queue and the exchange, you should be able to see all the queue in the UI
+
+![Screenshot 2025-03-08 at 3 47 30 PM](https://github.com/user-attachments/assets/b7299a2e-b501-4989-9ebf-e5e8de5e7217)
+
+   
+
 ## Project Structure
 
 ```bash
