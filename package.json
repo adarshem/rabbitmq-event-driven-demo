@@ -1,0 +1,17 @@
+{
+    "name": "rabbitmq-event-driven-demo",
+    "version": "1.0.0",
+    "description": "A demo of event-driven architecture using Node.js and RabbitMQ",
+    "main": "index.js",
+    "scripts": {
+      "start:publisher": "node src/publisher.js",
+      "start:order-consumer": "node src/consumers/orderConsumer.js",
+      "start:notification-consumer": "node src/consumers/notificationConsumer.js",
+      "start:analytics-consumer": "node src/consumers/analyticsConsumer.js"
+    },
+    "dependencies": {
+      "amqplib": "^0.10.3",
+      "dotenv": "^16.3.1",
+      "uuid": "^9.0.1"
+    }
+  }
