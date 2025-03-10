@@ -91,3 +91,31 @@ In the architecture we implemented:
     - For example, when an event with routing key order.created is published
     - The exchange checks which queues have bindings that match this routing key
     - Since all three queues have bindings for order.created, the message is copied to all three queues
+
+
+### 3. What is AMQP
+
+AMQP stands for Advanced Message Queuing Protocol. It is an open standard application layer protocol for message-oriented middleware. 
+
+The key features of AMQP include:
+
+- Message Orientation: Messages are the fundamental unit of data transfer.
+- Queueing: Messages are stored in queues until they are processed.
+- Routing: Messages can be routed to different queues based on rules.
+- Reliability: Ensures messages are delivered reliably, even in the case of failures.
+- Security: Supports various security mechanisms to ensure secure message transfer.
+
+AMQP is commonly used in systems that require reliable and scalable message passing, such as financial systems, telecommunications, and distributed applications. RabbitMQ is a popular implementation of the AMQP protocol.
+
+
+### 4. What is amqplib
+
+The `amqplib` package is a Node.js library for interacting with AMQP-based message brokers, such as RabbitMQ. It provides a way to connect to an AMQP server, create channels, and send/receive messages. 
+
+Here are some key features of amqplib:
+
+- Connecting to an AMQP Server: Establishes a connection to an AMQP server like RabbitMQ.
+- Creating Channels: Channels are used to perform most operations, such as declaring queues and exchanges, and publishing/consuming messages.
+- Publishing Messages: Allows sending messages to exchanges, which then route them to appropriate queues.
+- Consuming Messages: Enables receiving messages from queues for processing.
+- Handling Acknowledgements: Supports message acknowledgements to ensure reliable message delivery.
